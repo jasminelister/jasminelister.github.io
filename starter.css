@@ -42,7 +42,7 @@ img {
 
 /* ---------- 3) Page Defaults --------------- */
 body {
-  background:(#ade8f4);       /* Uses background colour from variables */
+  background:#ade8f4;       /* Uses background colour from variables */
   color: var(--text);             /* Default text colour */
   font-family: var(--font-body);  /* Sets font for body text */
   line-height: 1.5;               /* Improves readability by spacing out lines */
