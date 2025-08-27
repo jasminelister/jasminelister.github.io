@@ -150,7 +150,7 @@ nav a:focus-visible {
   background: var(--surface);           /* Light background for section */
   border-radius: var(--radius);         /* Rounded corners */
   padding: calc(var(--spacing) * 1.25); /* Internal spacing */
-  margin: 18px 0;                       /* Vertical spacing */
+  margin: 20px 0;                       /* Vertical spacing */
   box-shadow: var(--shadow);            /* Subtle shadow */
 }
 .profile {
@@ -190,19 +190,19 @@ table {
   font-family: Arial, sans-serif;     /* Table font */
 }
 th, td {
-  border: 1px solid #ccc;   /* Light grey cell borders */
+  border: 1px solid #00b4d8;   /* Light grey cell borders */
   padding: 10px 12px;         /* Space inside cells */
   text-align: left;           /* Aligns text to the left */
 }
 thead {
-  background-color: #f0f0f0; /* Light grey header background */
+  background-color: #00b4d8; /* Light grey header background */
 }
 th {
   color: #333;              /* Dark grey header text */
   font-weight: bold;          /* Bold header text */
 }
 tr:nth-child(even) {
-  background-color: #fafafa;  /* Zebra stripe effect for even rows */
+  background-color: #ade8f4;  /* Zebra stripe effect for even rows */
 }
 .flex-container {
   display: flex;                    /* Horizontal flex layout */
@@ -355,5 +355,13 @@ footer .container {
 .p-3 { 
   padding: 24px !important;     /* Large padding */
 }
+
+
+/* Standard spacing for all section headings */
+h2 {
+    margin-top: 40px;   /* space above heading */
+    margin-bottom: 20px; /* space below heading */
+}
+
 
 /* End of starter.css */
