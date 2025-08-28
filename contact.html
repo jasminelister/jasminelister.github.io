@@ -7,45 +7,55 @@
     <link rel="stylesheet" href="starter.css">
 </head>
 <body>
-    <!--Header section-->
+    <!-- This is the header section for my page -->
     <header>
-            <h1>Contact Me</h1>
-    </header>
-
-<!--Navigational Menu-->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="workedsamples.html">Samples of Work</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!--This is the main section-->
-<main>
-    <section>
         <h1>Contact Me</h1>
-        <p>Add contact form here later</p>
-        <p>If you would like to get in touch, you can contact me via the following methods</p>
-        <h2>Email</h2>
-        <p>s00337751@myacu.edu.au</p>
-        <h3>Phone</h3>
-        <p>04** *** ***</p>
-    </section>
-</main>
-
-<!--This is a footer created for copyright-->
-<footer>
-    <div class="container">
-        <p> &copy;2025 Jasmine Lister. All rights reserved</p>
-    </div>
-</footer>
+    </header>
+    <!-- Navigation menu section -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="active" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- This is the main content area for my page -->
+    <main>
+        <!-- This is the section for the Contact Form  -->
+        <section class="section">
+                <h2>Get in touch</h2>
+                <form id="contact-form" action="#" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Your details</legend>
+                        <!-- Form text input for Full Name -->
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" placeholder="River Lee" required minlength="6"             autocomplete="name">
+                        <!-- Form text input for Email address -->
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+                        <!-- Form text input for Message -->
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+                        <!-- honeypot anti-spam field -->
+                        <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;"> 
+                        <!-- button tag used for input, in line with Semantic HTML-->
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
+        </section>
+    </main>
+    <!-- This is the footer section for my page -->
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Jasmine Lister. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
