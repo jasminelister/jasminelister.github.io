@@ -3359,13 +3359,11 @@ table tbody tr:nth-child(2n + 1) { background-color: #fcfcfc; }
 /* 10) Footer alignment */
 footer .container, #footer .container { display: flex; justify-content: center; align-items: center; }
 
-/* 11) (Removed the empty :has() ruleset to silence linter) */
-
-/* 12) Focus outlines */
+/* 11) Focus outlines */
 a:focus, button:focus, input:focus, select:focus, textarea:focus {
   outline: 3px solid rgba(74,202,168,.35); outline-offset: 2px;
 }
 
-/* 13) Utilities */
+/* 12) Utilities */
 .muted { color: #aaa; }
 .section.centered { text-align: center; }
