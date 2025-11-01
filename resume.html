@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Teaching Portfolio - Resume</title>
-    <link rel="stylesheet" href="starter.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine's Teaching Portfolio — Resume</title>
+
+  <!-- Read Only template styles -->
+  <link rel="stylesheet" href="fontawesome-all.min.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <!-- This is the header section for my page -->
+
+  <!-- Sidebar (same as other pages) -->
+  <div id="header">
     <header>
-        <h1>Resume</h1>
-    </header>   
+      <span class="image avatar">
+        <img src="images/profile-square-rounded-jl.png" alt="Profile photo of Jasmine Lister">
+      </span>
+      <h1 id="logo"><a href="index.html">Jasmine Lister</a></h1>
+      <p>Pre-service Secondary Teacher<br/>Industrial Tech &amp; Food Tech</p>
+    </header>
 
-    <!--Navigational Menu-->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="workedsamples.html">Samples of Work</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a class="active" href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="teaching.html">Teaching Practice</a></li>
+        <li><a href="projects.html">Project Showcase</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a class="active" href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
 
-        </ul>
-    </div>
-</nav>
-    <!-- This is the main content area for my page -->
-    <main>
-        <section class="section">
-            <h2>Download Resume</h2>
-            <p>This document outlines my professional experience to date:</p>
-            <figure>
-                <a href="docs/resume-jasmine-lister.pdf" download="resume-jasmine-lister.pdf" type="application/pdf" aria-label="Download Resume PDF"><img src="images/resume-thumb.png" alt="Thumbnail of Resume PDF" width="300" loading="lazy"></a>
-                <figcaption> Download <strong>Resume</strong> (PDF)</figcaption>
-            </figure>
-        </section>
-    </main>
-    <!-- This is the footer section for my page-->
     <footer>
-        <div class="container">
-            <p> &copy; 2025 Jasmine Lister. All rights reserved.</p>
-        </div>
+      <ul class="icons">
+        <!-- optional icons -->
+      </ul>
     </footer>
+  </div>
+
+  <!-- Wrapper for main content -->
+  <div id="wrapper">
+    <div id="main">
+
+      <!-- Resume Section -->
+      <section id="resume">
+        <div class="container">
+          <header class="major">
+            <h2>Resume</h2>
+            <p>A snapshot of my professional experience, education, and teaching journey.</p>
+          </header>
+
+          <p>This downloadable document outlines my professional qualifications and experience as a pre-service secondary teacher specialising in Industrial Technology and Food Technology.</p>
+
+          <article class="box">
+            <a href="docs/resume-jasmine-lister.pdf" download="resume-jasmine-lister.pdf" type="application/pdf" aria-label="Download Resume PDF" class="image fit">
+              <img src="images/resume-thumb.png" alt="Thumbnail of Resume PDF">
+            </a>
+            <h3>Download Resume</h3>
+            <p>Click the thumbnail above to view or download my full resume in PDF format.</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; 2025 Jasmine Lister. All rights reserved.</li>
+          <li>Design inspired by HTML5 UP “Read Only”</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

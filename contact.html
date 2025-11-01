@@ -1,61 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Teaching Portfolio - Contact Me</title>
-    <link rel="stylesheet" href="starter.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine's Teaching Portfolio — Contact</title>
+
+  <!-- Read Only template styles -->
+  <link rel="stylesheet" href="fontawesome-all.min.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <!-- This is the header section for my page -->
+
+  <!-- Sidebar (same on all pages) -->
+  <div id="header">
     <header>
-        <h1>Contact Me</h1>
+      <span class="image avatar">
+        <img src="images/profile-square-rounded-jl.png" alt="Profile photo of Jasmine Lister">
+      </span>
+      <h1 id="logo"><a href="index.html">Jasmine Lister</a></h1>
+      <p>Pre-service Secondary Teacher<br/>Industrial Tech &amp; Food Tech</p>
     </header>
-    <!-- Navigation menu section -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a class="active" href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="teaching.html">Teaching Practice</a></li>
+        <li><a href="projects.html">Project Showcase</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a class="active" href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
-    <!-- This is the main content area for my page -->
-    <main>
-        <!-- This is the section for the Contact Form  -->
-        <section class="section">
-                <h2>Get in touch</h2>
-                <form id="contact-form" action="https://formsubmit.co/b93040af56705a95ab5b1d68e14b5f12" method="post" autocomplete="on">
-                    <fieldset>
-                        <legend>Your details</legend>
-                        <!-- Form text input for Full Name -->
-                        <label for="name">Full name</label>
-                        <input id="name" name="name" type="text" placeholder="River Lee" required minlength="6"             autocomplete="name">
-                        <!-- Form text input for Email address -->
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-                        <!-- Form text input for Message -->
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
-                        <!-- honeypot anti-spam field -->
-                        <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;"> 
-                        <!-- button tag used for input, in line with Semantic HTML-->
-                        <button type="submit">Send</button>
-                    </fieldset>
-                </form>
-        </section>
-    </main>
-    <!-- This is the footer section for my page -->
+
     <footer>
-        <div class="container">
-            <p> &copy; 2025 Jasmine Lister. All rights reserved.</p>
-        </div>
+      <ul class="icons">
+        <!-- optional social icons -->
+      </ul>
     </footer>
+  </div>
+
+  <!-- Wrapper for content -->
+  <div id="wrapper">
+    <div id="main">
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          <header class="major">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to connect? Use the form below to reach out.</p>
+          </header>
+
+          <form id="contact-form" action="https://formsubmit.co/b93040af56705a95ab5b1d68e14b5f12" method="POST" autocomplete="on">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="River Lee" required minlength="6" autocomplete="name">
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+              </div>
+              <div class="col-12">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+              </div>
+
+              <!-- Honeypot (spam prevention) -->
+              <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+
+              <div class="col-12">
+                <ul class="actions">
+                  <li><button type="submit" class="button primary">Send Message</button></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; 2025 Jasmine Lister. All rights reserved.</li>
+          <li>Design inspired by HTML5 UP “Read Only”</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

@@ -1,57 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Teaching Portfolio - Home</title>
-    <link rel="stylesheet" href="starter.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasmine's Teaching Portfolio — Home</title>
+
+  <!-- Read Only styles -->
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!--This is the header section-->
+
+  <!-- Sidebar (Read Only style) -->
+  <div id="header">
     <header>
-        <h1>Jasmine's Teaching Portfolio</h1>
+      <span class="image avatar">
+        <img src="images/profile-square-rounded-jl.png" alt="Profile photo of Jasmine Lister">
+      </span>
+      <h1 id="logo"><a href="index.html">Jasmine Lister</a></h1>
+      <p>Pre-service Secondary Teacher<br/>Industrial Tech &amp; Food Tech</p>
     </header>
 
-<!--Navigational Menu-->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="workedsamples.html">Samples of Work</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+    <nav id="nav">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="teaching.html">Teaching Practice</a></li>
+        <li><a href="projects.html">Project Showcase</a></li>
+        <li><a href="workedsamples.html">Samples of Work</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
 
+    <footer>
+      <ul class="icons">
+        <!-- add your links if you want -->
+        <!-- <li><a href="https://github.com/jasminelister" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+        <!-- <li><a href="mailto:you@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+      </ul>
+    </footer>
+  </div>
+
+  <!-- Page wrapper (pushes content left of the sidebar) -->
+  <div id="wrapper">
+
+    <!-- Main content area -->
+    <div id="main">
+
+      <!-- Section: Intro / Professional Summary -->
+      <section id="intro">
+        <div class="container">
+          <header class="major">
+            <h2>Professional Summary</h2>
+            <p>Snapshot of experience & placements</p>
+          </header>
+
+          <!-- Two-column layout using the template grid -->
+          <div class="row aln-middle">
+            <div class="col-7 col-12-medium">
+              <ul>
+                <li>Pre-service secondary teacher in third year of Bachelor of Secondary Education/Bachelor of Arts at ACU.</li>
+                <li>Completed three successful teaching placements in both practical and theory based Timber and Food Technology classes.</li>
+                <li>Committed to fostering inclusive, supportive classroom environments.</li>
+              </ul>
+            </div>
+
+            <div class="col-5 col-12-medium">
+              <span class="image fit">
+                <img src="images/profile-square-rounded-jl.png" alt="profile photo of Jasmine Lister">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Graduation countdown (styled with template classes) -->
+      <section id="graduation">
+        <div class="container">
+          <header class="major">
+            <h2>Days Until Graduation</h2>
+          </header>
+
+          <!-- Use the template's box style for a neat bordered panel -->
+          <div class="box align-center">
+            <p id="countdown" aria-live="polite">Loading...</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer (template style) -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; 2025 Jasmine Lister. All rights reserved.</li>
+          <li>Design inspired by HTML5 UP “Read Only”</li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </section>
 
-<main>
+  </div>
 
-    <!-- Profile + Professional Summary side by side -->
-<section class="profile">
-    <div class="profile-text">
-        <h2>Professional Summary</h2>
-        <ul>
-            <li>Pre-service secondary teacher in third year of Bachelor of Secondary Education/Bachelor of Arts at ACU.</li>
-            <li>Completed three successful teaching placements in both practical and theory based Timber and Food Technology classes.</li>
-            <li>Committed to fostering inclusive, supportive classroom environments.</li>
-        </ul>
-    </div>
-
-    <div class="profile-photo">
-        <img src="images/profile-square-rounded-jl.png" alt="profile photo of Jasmine Lister">
-    </div>
-</section>
-</main>
-<!--This is a footer created for copyright-->
-<footer>
-    <div class="container">
-        <p> &copy;2025 Jasmine Lister. All rights reserved</p>
-    </div>
-</footer>
+  <!-- Your countdown JS -->
+  <script src="countdown.js"></script>
 </body>
 </html>
+

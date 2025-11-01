@@ -1,71 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Teaching Portfolio - Projects</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine's Teaching Portfolio — Project Showcase</title>
 
+  <!-- Read Only template styles -->
+  <link rel="stylesheet" href="fontawesome-all.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
 <body>
-    <!--This is the header section for my page-->
+
+  <!-- Sidebar (same on all pages) -->
+  <div id="header">
     <header>
-        <h1>Project Showcase</h1>
+      <span class="image avatar">
+        <img src="images/profile-square-rounded-jl.png" alt="Profile photo of Jasmine Lister">
+      </span>
+      <h1 id="logo"><a href="index.html">Jasmine Lister</a></h1>
+      <p>Pre-service Secondary Teacher<br/>Industrial Tech &amp; Food Tech</p>
     </header>
 
-<!--Navigational Menu-->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a class="active" href="projects.html">Project Showcase</a></li>
-            <li><a href="workedsamples.html">Samples of Work</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="teaching.html">Teaching Practice</a></li>
+        <li><a class="active" href="projects.html">Project Showcase</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
 
-        </ul>
-    </div>
-</nav>
+    <footer>
+      <ul class="icons">
+        <!-- optional social links -->
+      </ul>
+    </footer>
+  </div>
 
-<!--This is the main content area for my page-->
-<main>
-    <section>
-        <!--These are my projects I have completed within my university degree-->
-        <h2>Stage 4-6 & University Course Projects</h2>
-        <p>Below are some projects I have completed during my teaching and design degree.</p>
-    </section>
-    
-    <section>
-        <div class="flex-container">
-            <div class="project-card">
-                <img src="images/phone-box-photo.png" alt="Photo of my Phone Box">
-                <h3>Stage 4 Timber Project</h3>
-                <p>A phone box using hand tools to construct the box and a laser cutter to engrave designs on plastic. </p>
-            </div>
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <div id="main">
 
-            <div class="project-card">
-                <img src="images/heirloom-box-photo.png">
-                <h3>Stage 5 Timber Project</h3>
-                <p>A herirloom box with mitred corners and veener designing. Could possibly be taught as a project for year 10.</p>
-            </div>
-
-            <div class="project-card">
-                <img src="images/lamp-photo-JL.png">
-                <h4>Timber Lamp Design Project</h4>
-                <p>This is a lamp I designed and created within a unit while studying my degree.</p>
-            </div>
+      <!-- Project Intro -->
+      <section id="projects-intro">
+        <div class="container">
+          <header class="major">
+            <h2>Stage 4–6 & University Course Projects</h2>
+            <p>A selection of practical design and teaching projects completed during my degree.</p>
+          </header>
         </div>
-    </section>
-</main>
+      </section>
 
-<!--This is a footer created for copyright-->
-<footer>
-    <div class="container">
-    <p> &copy;2025 Jasmine Lister. All rights reserved</p>
+      <!-- Project Gallery -->
+      <section id="project-gallery">
+        <div class="container">
+          <div class="features">
+
+            <!-- Project 1 -->
+            <article>
+              <span class="image">
+                <img src="images/phone-box-photo.png" alt="Photo of my Phone Box">
+              </span>
+              <div class="inner">
+                <h3>Stage 4 Timber Project — Phone Box</h3>
+                <p>
+                  A phone box constructed using hand tools and incorporating laser-cut plastic designs for decorative engraving. 
+                  This project introduced foundational joinery and safe workshop practices.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article>
+              <span class="image">
+                <img src="images/heirloom-box-photo.png" alt="Heirloom Box Project">
+              </span>
+              <div class="inner">
+                <h3>Stage 5 Timber Project — Heirloom Box</h3>
+                <p>
+                  A refined storage box using mitred corner joints and veneer patterning techniques. 
+                  This design can be adapted for Year 10 students to extend their fine woodworking skills.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article>
+              <span class="image">
+                <img src="images/lamp-photo-JL.png" alt="Timber Lamp Project">
+              </span>
+              <div class="inner">
+                <h3>University Timber Lamp Design</h3>
+                <p>
+                  A unique lamp designed and manufactured as part of a university design technologies unit, 
+                  focusing on aesthetic balance, safe electrical integration, and precise joinery.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
     </div>
-</footer>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; 2025 Jasmine Lister. All rights reserved.</li>
+          <li>Design inspired by HTML5 UP “Read Only”</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
 </body>
 </html>

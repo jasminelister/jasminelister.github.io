@@ -1,58 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Teaching Portfolio - Teaching Practice</title>
-    <link rel="stylesheet" href="starter.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasmine's Teaching Portfolio — Teaching Practice</title>
+
+  <!-- Read Only template styles -->
+  <link rel="stylesheet" href="fontawesome-all.min.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
-
+  <!-- Sidebar (same across site) -->
+  <div id="header">
     <header>
-        <h1>Teaching Practice</h1>
+      <span class="image avatar">
+        <img src="images/profile-square-rounded-jl.png" alt="Profile photo of Jasmine Lister">
+      </span>
+      <h1 id="logo"><a href="index.html">Jasmine Lister</a></h1>
+      <p>Pre-service Secondary Teacher<br/>Industrial Tech &amp; Food Tech</p>
     </header>
 
-    <!--Navigational Menu-->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="active" href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="workedsamples.html">Samples of Work</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-
-            </ul>
-        </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="teaching.html">Teaching Practice</a></li>
+        <li><a href="projects.html">Project Showcase</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
 
-    <main>
-        <!--This section is focused on my teaching philosophy-->
-        <section>
-            <h1>My Teaching Philosophy</h1>
-            <p>During each placement, I’ve embraced the opportunity to design hands on lessons and adapt my approaches to suit different learners and school contexts. I enjoy finding creative ways to adapt both Industrial Technology and Food Technologies into meaningful learning experiences, making sure students can see the relevance of what they’re creating. Whether it’s guiding a timber project from concept sketches to final products or teaching practical food preparation skills, I aim to make learning active, engaging, and connected to real world applications. These experiences have helped me refine my ability to plan, deliver, and reflect on lessons that build student confidence, technical skills, and a genuine enthusiasm for learning.</p>
-        </section>
-        <!--This section is focused on my educational quote-->
-        <section>
-            <h2>My Favourite Educational Quote</h2>
-            <!--This is the quote I designed in canva-->
-            <p>One of my favourite quotes is shown below by B.B. King. I connect deeply with this because it reminds me that education is a lifelong gift and how it empowers individuals far beyond the classroom and stays with them no matter the challenges they face. I want my students to feel this same sense of ownership over their learning and to leave my classes with skills and knowledge they know are truly theirs.</p>
-            <div class="visual-quote">
-                <img src="images/new-quote-jl-png.png" alt="visual teaching quote - 'The beautiful thing about learning is that no one can take it away from you' - B.B King" width="350px">
-            </div>
-        </section>
-    </main>
-
-    <!--This is a footer created for copyright-->
     <footer>
-        <div class="container">
-        <p> &copy;2025 Jasmine Lister. All rights reserved</p>
-        </div>
+      <ul class="icons">
+        <!-- optional social icons -->
+      </ul>
     </footer>
+  </div>
 
+  <!-- Content wrapper -->
+  <div id="wrapper">
+    <div id="main">
+
+      <!-- Teaching Philosophy -->
+      <section id="philosophy">
+        <div class="container">
+          <header class="major">
+            <h2>My Teaching Philosophy</h2>
+          </header>
+          <p>
+            During each placement, I’ve embraced the opportunity to design hands-on lessons and adapt my approaches to suit different learners and school contexts. I enjoy finding creative ways to adapt both Industrial Technology and Food Technologies into meaningful learning experiences, making sure students can see the relevance of what they’re creating. Whether it’s guiding a timber project from concept sketches to final products or teaching practical food preparation skills, I aim to make learning active, engaging, and connected to real-world applications. These experiences have helped me refine my ability to plan, deliver, and reflect on lessons that build student confidence, technical skills, and a genuine enthusiasm for learning.
+          </p>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section id="quote">
+        <div class="container">
+          <header class="major">
+            <h2>My Favourite Educational Quote</h2>
+            <p>“The beautiful thing about learning is that no one can take it away from you.” — B.B. King</p>
+          </header>
+
+          <div class="row gtr-50">
+            <div class="col-8 col-12-medium">
+              <p>
+                I connect deeply with this because it reminds me that education is a lifelong gift — it empowers individuals far beyond the classroom and stays with them no matter the challenges they face. I want my students to feel this same sense of ownership over their learning and to leave my classes with skills and knowledge they know are truly theirs.
+              </p>
+            </div>
+            <div class="col-4 col-12-medium">
+              <span class="image fit">
+                <img src="images/new-quote-jl-png.png" alt="Quote graphic: 'The beautiful thing about learning is that no one can take it away from you' — B.B. King">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; 2025 Jasmine Lister. All rights reserved.</li>
+          <li>Design inspired by HTML5 UP “Read Only”</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
